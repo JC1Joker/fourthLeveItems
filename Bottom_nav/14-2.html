@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2706董嘉诚基于SVG的自适应宽度的固定导航</title>
+    <script src="./font/iconfont.js"></script>
+    <style>
+        .icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            
+        }
+        body,ul,p{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            margin-bottom: 50px;/* 固定导航一起的 */
+        }
+        .bnav{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            z-index: 9;/* 当你滑动时，导航条覆盖内容不跟随移动 */
+        }
+        .bnav li{
+            width: 33.333%;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .banv p{
+            color:#333;
+            line-height: 26px;
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+        .icon{
+            font-size: 36px;
+            margin: 5px 0;
+        }
+
+        </style>        
+</head>
+<body>
+    <!-- nav header main footer -->
+    <nav class="bnav">
+        <ul>
+            <li>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-shouye"></use>
+                      </svg>
+                    <p>首页</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qingdan"></use>
+                      </svg>
+                    <p>骗局曝光</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-31wode"></use>
+                      </svg>
+                    <p>我的</p>
+                </a>
+            </li>
+        </ul>
+    </nav><!-- 下导航 -->
+
+</body>
+</html>
