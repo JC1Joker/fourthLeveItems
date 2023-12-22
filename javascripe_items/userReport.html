@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 当网站添加到主屏幕快速启动方式，启动网页时全屏显示 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="2706">
+
+    <title>23201012706-董嘉诚</title>
+
+    <link rel="stylesheet" href="./CSS/userReport.css">
+  </head>
+  <body>
+    <!-- 进入页面的提示 -->
+    <nav class="tnav">
+      <a href="./index.html"><img src="./img/plugins/back_bla_arrow.png" alt=""></a>
+      <p>我要举报</p>
+    </nav>
+    
+<main>
+    <div class="modal-container">
+       
+        <div class="report">
+          <p>举报详情<span>（选填项）</span></p>
+          <div class="report_details">
+            <div>
+              <p>诈骗类型</p>
+              <p>请选择 ></p>
+            </div>
+            <div>
+              <p>举报地</p>
+              <p>请选择 ></p>
+            </div>
+            <div>
+              <p>举报描述</p>
+              <p>请选择 ></p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="report_content_container">
+          <p>举报内容<span>（请至少填写一项）</span></p>
+          <div class="report_content">
+            <div>
+              <p>诈骗电话</p>
+              <p>请选择 ></p>
+            </div>
+            <div>
+              <p>诈骗短信</p>
+              <p>请选择 ></p>
+            </div>
+            <div>
+              <p>APP应用程序</p>
+              <p>请选择 ></p>
+            </div>
+            <div>
+              <p>图片</p>
+              <p>请选择 ></p>
+            </div>
+            <div>
+              <p>诈骗网址</p>
+              <p>请填写 ></p>
+            </div>
+            <div>
+              <p>诈骗社交账号</p>
+              <p>请填写 ></p>
+            </div>
+            <div>
+              <p>诈骗交易账户</p>
+              <p>请填写 ></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="submit">
+          <p>今日剩余可举报次数<span id="times">2</span>次</p>
+          <button>提交举报</button>
+        </div>
+      </div>
+</main>
+    
+
+    <!-- 模态框 -->
+    <div class="overlay" id="overlay">
+        <div class="modal" id="modal">
+          <p class="alert-text">
+            欢迎您举报涉诈电话、短信、APP、网址、社交账号、交易账户等线索。如果您现在已经被骗，请立即拨打<span>110</span>
+            报警，或迅速前往当地公安机关报案。
+          </p>
+          <button id="confirmButton" onclick="hideCustomModal()">我知道了</button>
+        </div>
+      </div> 
+
+    <script src="./js/page_load.js"></script>
+  </body>
+</html>
